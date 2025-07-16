@@ -6,7 +6,7 @@ def pagina_principal():
     seleccion = st.sidebar.radio(
         "Selecciona una calculadora:",
         ["Inicio","Calculadora P.A.P.I", "Calculadora transmilenio", "Comedores", "Doble titulación", "Horario monitorias",
-        "Lugar para estudiar", "Organizador de horario"]
+        "Lugar para estudiar", "Calculadora horas de estudio"]
     )
 
     if seleccion == "Inicio":
@@ -31,7 +31,7 @@ def pagina_principal():
     elif seleccion == "Lugar para estudiar":
         lugares_estudio.mostrar()
 
-    elif seleccion == "Organizador de horario":
+    elif seleccion == "Calculadora horas de estudio":
         horario_estudio.mostrar()
 
     if st.sidebar.button("⬅️ Volver al menú principal"):
