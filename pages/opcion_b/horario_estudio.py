@@ -4,7 +4,7 @@ import pandas as pd
 colores = ["#e74c3c", "#2980b9", "#27ae60", "#8e44ad", "#f39c12", "#ffffff"]
 
 def mostrar():
-    st.title("📗 Organizador de horario")
+    st.title("📗 Calculadora horas de estudio")
     st.write("Esta herramienta te ayuda a organizar saber cuánto tiempo tienes que dedicar a cada asignatura.")
     
     with st.expander("Instrucciones de Uso", expanded=True):
