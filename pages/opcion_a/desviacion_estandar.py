@@ -15,7 +15,7 @@ def calcular_desviacion_estandar(datos):
 
 def mostrar():
     if "datos" not in st.session_state:
-    st.session_state.datos = []
+     st.session_state.datos = []
     
     st.title("📊 Calculadora de Varianza y Desviación Estándar")
     st.write("Este programa permite ingresar números uno a uno y calcular la varianza y desviación estándar.")
