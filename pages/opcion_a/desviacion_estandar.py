@@ -33,7 +33,7 @@ def mostrar():
         submit = st.form_submit_button("Añadir")
         if submit:
             st.session_state.datos.append(nuevo)
-
+    st.session_state.datos = []
     # Reiniciar
     if st.button("🔁 Reiniciar"):
         st.session_state.datos = []
