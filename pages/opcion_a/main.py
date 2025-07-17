@@ -1,13 +1,13 @@
 import streamlit as st
 
-from . import textobinario,morse, hexadecimal, cesar, ecuaciones_2x2_3x3, euleredos, trapeciosimpson, interpolacion_lagrange, runge_kutta, Newton_Raphson
+from . import textobinario,morse, hexadecimal, cesar, euleredos, trapeciosimpson, interpolacion_lagrange, runge_kutta, Newton_Raphson
 from . import hexa_binario, desviacion_estandar
 
 def pagina_principal():
     st.sidebar.title("🎓 Menú calculadoras académicas")
     seleccion = st.sidebar.radio(
         "Selecciona una calculadora:",
-        ["Inicio", "Texto a binario", "Texto a Hexadecimal","Traductor Morse","Cifrado César","Calculadora hexa-binario","Calculadora ecuaciones 2x2 y 3x3",
+        ["Inicio", "Texto a binario", "Texto a Hexadecimal","Traductor Morse","Cifrado César","Calculadora hexa-binario",
         "Metodo Euler para EDOS","Trapecio o Simpson para integrales","Interpolación de Lagrange", "Calculadora Runge Kutta",
         "Newton-Raphson","Calculadora de Varianza y Desviación Estándar"]
     )
@@ -33,9 +33,6 @@ def pagina_principal():
 
     elif seleccion == "Calculadora hexa-binario":
         hexa_binario.mostrar()
-
-    elif seleccion == "Calculadora ecuaciones 2x2 y 3x3":
-        ecuaciones_2x2_3x3.mostrar()
     
     elif seleccion == "Metodo Euler para EDOS":
         euleredos.mostrar()
