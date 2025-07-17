@@ -10,7 +10,7 @@ if "subpage" not in st.session_state:
     st.session_state.subpage = "inicio"
 
 def show_menu():
-    st.markdown("<h1 style='color: #eb4c34;'>Bienvenido a Calulaya</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color: #eb4c34;'>Bienvenido a Calculaya</h1>", unsafe_allow_html=True)
     st.subheader("Escoge el tipo de calculadora quieres usar.")
     st.caption("Nota: Presiona dos veces el botón para confirmar")
     st.divider()
