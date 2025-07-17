@@ -1,6 +1,6 @@
 import streamlit as st
 
-from . import textobinario,morse, hexadecimal, cesar, euleredos, trapeciosimpson, interpolacion_lagrange, runge_kutta, Newton_Raphson
+from . import textobinario,morse, hexadecimal, cesar, euleredos, trapeciosimpson, interpolacion_lagrange, Newton_Raphson
 from . import hexa_binario, desviacion_estandar
 
 def pagina_principal():
@@ -8,7 +8,7 @@ def pagina_principal():
     seleccion = st.sidebar.radio(
         "Selecciona una calculadora:",
         ["Inicio", "Texto a binario", "Texto a Hexadecimal","Traductor Morse","Cifrado César","Calculadora hexa-binario",
-        "Metodo Euler para EDOS","Trapecio o Simpson para integrales","Interpolación de Lagrange", "Calculadora Runge Kutta",
+        "Metodo Euler para EDOS","Trapecio o Simpson para integrales","Interpolación de Lagrange",
         "Newton-Raphson","Calculadora de Varianza y Desviación Estándar"]
     )
 
@@ -42,9 +42,6 @@ def pagina_principal():
     
     elif seleccion == "Interpolación de Lagrange":
         interpolacion_lagrange.mostrar()
-
-    elif seleccion == "Calculadora Runge Kutta":
-        runge_kutta.mostrar()
     
     elif seleccion == "Newton-Raphson":
         Newton_Raphson.mostrar()
