@@ -8,8 +8,7 @@ def pagina_principal():
     seleccion = st.sidebar.radio(
         "Selecciona una calculadora:",
         ["Inicio", "Texto a binario", "Texto a Hexadecimal","Traductor Morse","Cifrado César","Calculadora hexa-binario",
-        "Metodo Euler para EDOS","Trapecio o Simpson para integrales","Interpolación de Lagrange",
-        "Newton-Raphson","Calculadora de Varianza y Desviación Estándar"]
+        "Metodo Euler para EDOS","Trapecio o Simpson para integrales","Interpolación de Lagrange","Newton-Raphson","Calculadora de Varianza y Desviación Estándar"]
     )
 
 
@@ -43,9 +42,6 @@ def pagina_principal():
     elif seleccion == "Interpolación de Lagrange":
         interpolacion_lagrange.mostrar()
     
-    elif seleccion == "Newton-Raphson":
-        Newton_Raphson.mostrar()
-
     elif seleccion == "Newton-Raphson":
         Newton_Raphson.mostrar()
     
