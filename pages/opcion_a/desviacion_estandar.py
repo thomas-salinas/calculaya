@@ -39,7 +39,7 @@ def mostrar():
         st.session_state.datos = []
 
     # Mostrar datos
-    if st.session_state.datos or st.session_state.datos=[]:
+    if st.session_state.datos:
         st.write("Números ingresados:")
         st.code(", ".join(str(x) for x in st.session_state.datos))
 
