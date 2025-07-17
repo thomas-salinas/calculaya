@@ -26,7 +26,7 @@ def mostrar():
         """)
 
     st.divider()
-    st.session_state.datos = []
+    #st.session_state.datos = []
     # Formulario para añadir números (Enter funciona aquí)
     with st.form(key="formulario_numero", clear_on_submit=True):
         nuevo = st.number_input("Ingrese un número", step=1.0, format="%.4f", key="nuevo_input")
