@@ -1,8 +1,8 @@
 import streamlit as st
 
 # Inicializar lista
-if "datos" not in st.session_state:
-    st.session_state.datos = []
+#if "datos" not in st.session_state:
+    #st.session_state.datos = []
 
 def calcular_varianza(datos):
     n = len(datos)
@@ -14,6 +14,9 @@ def calcular_desviacion_estandar(datos):
     return varianza ** 0.5
 
 def mostrar():
+    if "datos" not in st.session_state:
+    st.session_state.datos = []
+    
     st.title("📊 Calculadora de Varianza y Desviación Estándar")
     st.write("Este programa permite ingresar números uno a uno y calcular la varianza y desviación estándar.")
 
